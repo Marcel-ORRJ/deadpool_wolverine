@@ -1,8 +1,7 @@
 @use 'variables' as *;
 
 .hero {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding: 64px 0;
     background-image: url(../images/deadpool-wolverine-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,5 +37,18 @@
         border-radius: 10px;
         text-align: center;
         @include title(56px);
+    }
+
+    @media #{$breakMobile} {
+        padding: 40px 0;
+
+        &__title,
+        &__counter {
+            @include title(22px);
+        }
+
+        &__title {
+            margin-top: 20px;
+        }
     }
 }

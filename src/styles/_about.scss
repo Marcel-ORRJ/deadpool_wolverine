@@ -48,4 +48,25 @@
     &--wolverine {
         background-image: linear-gradient($dwBlue, $dwBlack);
     }
+
+    @media #{$breakMobile} {
+        .container {
+            display: block;
+        }
+
+        &__image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        &__details {
+            margin-bottom: 16px;
+            text-align: center;
+
+            &__description {
+                @include text(18px);
+            }
+        }
+    }
 }
