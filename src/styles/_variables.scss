@@ -1,0 +1,37 @@
+$dwYellow: #ffb400;
+$dwBlack: #000000;
+$dwBlue: #1d2158;
+$dwRed: #a30303;
+$dwGray: #dddddd;
+
+$breakMobile: "(max-width: 767px)";
+$breakTablet: "(min-width: 768px) and (max-width: 1023px)";
+
+@font-face {
+    font-family: Roguehero;
+    src: url(../../assets/fonts/roguehero.ttf);
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(../../assets/fonts/Futura.ttf);
+}
+
+@mixin title($fontSize: 36px) {
+    font-family: Roguehero, sans-serif;
+    font-size: $fontSize;
+    letter-spacing: calc($fontSize * .05);
+    transition: transform .2s ease;
+    color: $dwRed;
+
+    &:hover {
+        transform: translateY(-2px);
+        transition: transform .2s ease;
+    }
+}
+
+@mixin text($fontSize: 24px) {
+    font-family: Futura, sans-serif;
+    font-size: $fontSize;
+    color: $dwGray;
+}

@@ -1,0 +1,29 @@
+@use 'variables' as *;
+@use 'hero';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $dwBlack;
+    cursor: default;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media #{$breakTablet} {
+        max-width: 90%;
+    }
+
+    @media #{$breakMobile} {
+        max-width: 80%;
+    }
+}
