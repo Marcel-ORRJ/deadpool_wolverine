@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+.trailer {
+    padding: 40px;
+    background-image: linear-gradient($dwBlack, $dwBlue);
+
+    &__title {
+        @include title(60px);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    video {
+        width: 100%;
+        border-radius: 10px;
+    }
+}

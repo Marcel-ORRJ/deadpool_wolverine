@@ -1,7 +1,8 @@
 @use 'variables' as *;
 @use 'hero';
-
-
+@use 'trailer';
+@use 'about';
+@use 'footer';
 
 * {
     margin: 0;
